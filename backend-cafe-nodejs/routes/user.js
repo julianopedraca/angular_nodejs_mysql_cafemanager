@@ -8,6 +8,7 @@ require("dotenv").config();
 
 var auth = require("../services/authentication");
 var checkRole = require("../services/checkRole");
+const { query } = require("express");
 
 router.post("/signup", (req, res) => {
   let user = req.body;
@@ -180,5 +181,7 @@ router.post("/changePassword", auth.authenticateToken,(req, res) => {
     }
   })
 });
+
+
 
 module.exports = router;
