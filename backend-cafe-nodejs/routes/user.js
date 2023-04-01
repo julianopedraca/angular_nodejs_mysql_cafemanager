@@ -121,6 +121,12 @@ router.post("/forgotPassword", (req, res) => {
   });
 });
 
+
+router.get("/test", (req, res) => {
+  return res.status(200).json({ message: "teste"})
+});
+
+
 router.get("/get", auth.authenticateToken, checkRole.checkRole, (req, res) => {
   query =
     "SELECT id, name, email, contactNumber, status FROM user WHERE role='user'";
