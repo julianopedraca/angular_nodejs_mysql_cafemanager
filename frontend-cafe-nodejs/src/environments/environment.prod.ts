@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: "https://jellyfish-app-nssaz.ondigitalocean.app"
+  apiUrl: "https://jellyfish-app-nssaz.ondigitalocean.app/api"
 };
