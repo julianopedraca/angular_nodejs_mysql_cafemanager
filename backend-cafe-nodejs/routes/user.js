@@ -62,7 +62,6 @@ router.post("/login", (req, res) => {
         });
       }
     } else {
-      console.log(process.env.USER)
       return res.status(500).json(err);
     }
   });
